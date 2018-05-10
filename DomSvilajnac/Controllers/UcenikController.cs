@@ -55,7 +55,7 @@ namespace DomSvilajnac.Controllers
         // GET: DbContext/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(context.Ucenici.FirstOrDefault(m => m.Id == id));
         }
 
         // POST: DbContext/Edit/5
