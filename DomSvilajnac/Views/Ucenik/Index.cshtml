@@ -1,0 +1,255 @@
+﻿@model IEnumerable<DomSvilajnac.Models.Ucenik>
+
+@{
+    ViewBag.Title = "Lista učenika";
+}
+
+<h2>Lista učenika</h2>
+
+<p>
+    @Html.ActionLink("Dodaj novog učenika", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.DatumRodjenja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtacIme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtacPrezime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtacObrazovanje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MajkaIme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MajkaPrezime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MajkaObrazovanje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MestoRodjenja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OpstinaRodjenja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DrzavaRodjenja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatumUseljenja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrojSobe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrojUMatKnjizi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdresaBoravka)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobTelefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FiksniTelefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatumNapustanja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RazlogNapustanja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skola)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObrazovniProfil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Razred)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Odeljenje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonSkole)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OdeljenskiStaresina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UspehPreRazred)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InteresovanjaHobi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UcesceDom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UcesceSkola)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UcesceGrad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PohvaleDom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PohvaleSkola)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PohvaleOstalo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeraOpomena)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeraUkor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UkorPredIskljucenje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IskljucenjeIzDoma)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Ime)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Prezime)
+        </td>
+        @*<td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.DatumRodjenja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.OtacIme)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.OtacPrezime)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.OtacObrazovanje)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MajkaIme)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MajkaPrezime)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MajkaObrazovanje)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MestoRodjenja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.OpstinaRodjenja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.DrzavaRodjenja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.DatumUseljenja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.BrojSobe)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.BrojUMatKnjizi)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.AdresaBoravka)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MobTelefon)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.FiksniTelefon)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.DatumNapustanja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.RazlogNapustanja)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Skola)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.ObrazovniProfil)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Razred)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Odeljenje)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.TelefonSkole)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.OdeljenskiStaresina)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.UspehPreRazred)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.InteresovanjaHobi)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.UcesceDom)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.UcesceSkola)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.UcesceGrad)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.PohvaleDom)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.PohvaleSkola)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.PohvaleOstalo)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MeraOpomena)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.MeraUkor)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.UkorPredIskljucenje)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.IskljucenjeIzDoma)
+        </td>*@
+        <td>
+            @Html.ActionLink("Izmena", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Detalji", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Obriši", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

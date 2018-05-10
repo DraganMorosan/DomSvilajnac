@@ -1,0 +1,323 @@
+﻿@model DomSvilajnac.Models.Ucenik
+
+@{
+    ViewBag.Title = "Detalji o učeniku";
+}
+
+<h2>Detalji o učeniku @Model.Ime @Model.Prezime</h2>
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <h4></h4>
+    <hr />
+
+        <div class="row">
+            @Html.Label("Ime učenika", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.Ime)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Prezime učenika", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.Prezime)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Datum rođenja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.DatumRodjenja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Ime oca", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.OtacIme)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Prezime oca", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.OtacPrezime)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Nivo obrazovanja oca", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.OtacObrazovanje)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Ime majke", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MajkaIme)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Prezime majke", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MajkaPrezime)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Nivo obrazovanja majke", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MajkaObrazovanje)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Mesto rođenja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MestoRodjenja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Opstina rođenja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.OpstinaRodjenja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Država rođenja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.DrzavaRodjenja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Datum useljenja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.DatumUseljenja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Broj sobe", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.BrojSobe)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Broj u matičnoj knjizi", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.BrojUMatKnjizi)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Adresa boravka", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.AdresaBoravka)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Mobilni telefon", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MobTelefon)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Fiksni telefon", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.FiksniTelefon)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Datum napuštanja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.DatumNapustanja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Razlog napuštanja", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.RazlogNapustanja)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Škola", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.Skola)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Obrazovni profil(Smer za gimnazije)", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.ObrazovniProfil)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Razred", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.Razred)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Odeljenje", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.Odeljenje)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Telefon škole", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.TelefonSkole)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Odeljenski starešina", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.OdeljenskiStaresina)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Opšti uspeh u prethodnom razredu", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.UspehPreRazred)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Interesovanja ili hobi učenika", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.InteresovanjaHobi)</span>
+        </div>
+        <h4>Učešće u radu sekcija, klubova, društava i dr.</h4>
+
+        <div class="row">
+            @Html.Label("a) U domu", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.UcesceDom)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("b) U školi", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.UcesceSkola)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("c) U gradu", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.UcesceGrad)</span>
+        </div>
+        <h4>Pohvale, nagrade i osvojena mesta na takmičenjima do trećeg mesta</h4>
+        <div class="row">
+            @Html.Label("a) U domu", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.PohvaleDom)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("b) U školi", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.PohvaleSkola)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("c) Ostale pohvale", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.PohvaleOstalo)</span>
+        </div>
+        <h4>Disciplinske mere:</h4>
+
+        <div class="row">
+            @Html.Label("Opomena", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MeraOpomena)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Ukor", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.MeraUkor)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Ukor pred isključenje iz doma", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.UkorPredIskljucenje)</span>
+        </div>
+
+        <div class="row">
+            @Html.Label("Isključenje iz doma", htmlAttributes: new { @class = "control-label col-md-6" })
+        
+
+        
+            <span class="podatak">@Html.DisplayFor(model => model.IskljucenjeIzDoma)</span>
+        </div>
+        <div class="row">
+            @Html.ActionLink("Izmeni učenika", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Nazad na listu učenika", "Index")
+        </div>
+</div>
+
