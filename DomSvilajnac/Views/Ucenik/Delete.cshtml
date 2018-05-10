@@ -316,8 +316,9 @@
         <span class="podatak">@Html.DisplayFor(model => model.IskljucenjeIzDoma)</span>
     </div>
 </div>
-
-    @using (Html.BeginForm()) {
+<div class="row">
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
