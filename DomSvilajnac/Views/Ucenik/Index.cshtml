@@ -17,13 +17,13 @@
         <th>
             @Html.DisplayNameFor(model => model.Prezime)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JMBG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Razred)
+        </th>
         @*<th>
-            @Html.DisplayNameFor(model => model.DatumRodjenja)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OtacIme)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.OtacPrezime)
         </th>
         <th>
@@ -136,6 +136,12 @@
         <td>
             <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Prezime)
         </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.JMBG)
+        </td>
+        <td>
+            <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.Razred)
+        </td>
         @*<td>
             <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.DatumRodjenja)
         </td>
@@ -245,9 +251,9 @@
             <span class="podatak col-md-2">@Html.DisplayFor(modelItem => item.IskljucenjeIzDoma)
         </td>*@
         <td>
-            @Html.ActionLink("Izmena", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Detalji", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Obriši", "Delete", new { id=item.Id })
+            @Html.ActionLink("Izmena", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Detalji", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Obriši", "Delete", new { id = item.Id })
         </td>
     </tr>
 }

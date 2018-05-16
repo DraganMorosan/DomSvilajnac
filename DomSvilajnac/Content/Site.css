@@ -20,9 +20,26 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 450px;
+    min-width: 450px;
+    width: 450px;
 }
 
+    input[type="radio"] {
+        max-width: 50px;
+        min-width: 50px;
+        width: 50px;
+    }
+
+@media (min-width: 992px) {
+    .col-md-10 {
+        width: 550px !important;
+    }
+
+    .col-md-2 {
+        width: 274px !important;
+    }
+}
 label.error {
     color: #c62121;
 }

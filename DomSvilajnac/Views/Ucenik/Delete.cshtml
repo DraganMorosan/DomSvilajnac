@@ -27,6 +27,14 @@
     </div>
 
     <div class="row">
+        @Html.Label("JMBG učenika", htmlAttributes: new { @class = "control-label col-md-6" })
+
+
+
+        <span class="podatak">@Html.DisplayFor(model => model.JMBG)</span>
+    </div>
+
+    <div class="row">
         @Html.Label("Datum rođenja", htmlAttributes: new { @class = "control-label col-md-6" })
 
 
@@ -103,6 +111,13 @@
 
 
         <span class="podatak">@Html.DisplayFor(model => model.BrojUMatKnjizi)</span>
+    </div>
+    <div class="row">
+        @Html.Label("Mesto boravka", htmlAttributes: new { @class = "control-label col-md-6" })
+
+
+
+        <span class="podatak">@Html.DisplayFor(model => model.MestoBoravka)</span>
     </div>
 
     <div class="row">

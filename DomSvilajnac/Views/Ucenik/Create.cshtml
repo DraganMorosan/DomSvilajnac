@@ -32,6 +32,14 @@
     </div>
 
     <div class="form-group">
+        @Html.Label("JMBG učenika", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.JMBG, new { htmlAttributes = new { @class = "form-control", @maxlength="13" } })
+            @Html.ValidationMessageFor(model => model.JMBG, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
         @Html.Label("Datum rođenja", htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.EditorFor(model => model.DatumRodjenja, new { htmlAttributes = new { @class = "form-control", @placeholder = "Format: dd.mm.gggg.(npr. 21.03.1997.)" } })
@@ -76,7 +84,7 @@
     <div class="form-group">
         @Html.Label("Nivo obrazovanja staratelja", htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.NivoObrazovanja, new { htmlAttributes = new { @class = "form-control", @placeholder="Unesite broj od 1-8" } })
+            @Html.EditorFor(model => model.NivoObrazovanja, new { htmlAttributes = new { @class = "form-control", @placeholder = "Unesite broj od 1-8" } })
             @Html.ValidationMessageFor(model => model.NivoObrazovanja, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -186,6 +194,14 @@
         <div class="col-md-10">
             @Html.EditorFor(model => model.BrojUMatKnjizi, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.BrojUMatKnjizi, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Mesto boravka", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MestoBoravka, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MestoBoravka, "", new { @class = "text-danger" })
         </div>
     </div>
 

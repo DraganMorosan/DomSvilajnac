@@ -11,6 +11,12 @@
             Prezime: {
                 required: true,
             },
+            JMBG: {
+                required: true,
+                maxlength: 13,
+                minlength: 13,
+                number: true
+            },
             DatumRodjenja: {
                 required: true,
                 datum_regex: datumRegex
@@ -48,6 +54,9 @@
             AdresaBoravka: {
                 required: true
             },
+            MestoBoravka: {
+                required: true
+            },
             //DatumUseljenja: {
             //    required: true,
             //    datum_regex: datumRegex
@@ -57,7 +66,8 @@
             //},
             Telefon: {
                 //| (^ 06\d\d{ 6-7 }$)
-                telefon: /(^(0[1-3]\d\d{9})?$)|(^(06\d\d{9})?$)/
+                required: true,
+                telefon: /(^(0[1-3]\d\d{6,9})$)|(^(06\d\d{9})$)/
             },
             Skola: {
                 required: true
@@ -81,6 +91,12 @@
             },
             Prezime: {
                 required: "Polje prezime je obavezno.",
+            },
+            JMBG: {
+                required: "Polje JMBG je obavezno.",
+                minlength: "Polje JMBG mora sadržati najmanje 13 karaktera.",
+                maxlength: "Polje JMBG može sadržati najviše 13 karaktera.",
+                number: "Polje se mora sastojati od brojeva."
             },
             DatumRodjenja: {
                 required: "Polje datum rođenja je obavezno."
@@ -115,6 +131,9 @@
             },
             AdresaBoravka: {
                 required: "Polje adresa boravka je obavezno.",
+            },
+            MestoBoravka: {
+                required: "Polje mesto boravka je obavezno.",
             },
             Telefon: {
                 required: "Polje telefon je obavezno.",
